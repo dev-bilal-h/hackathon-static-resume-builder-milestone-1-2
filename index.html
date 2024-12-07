@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--  Picture & Names-->
+        <div class="left-section">
+            <div class="profile">
+                <img src="pic.png" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="Profile">
+                <h2>Bilal Hassan</h2>
+                <p>Front-end Developer</p>
+            </div>
+        </div>
+
+        <!-- Static Interactive Resume -->
+        <div class="right-section">
+            <h1 class="title">STATIC INTERACTIVE RESUME</h1>
+
+            <!-- personal Information Section -->
+            <div class="section-box">
+                <div class="heading">
+                    <h2>PERSONAL INFORMATION</h2>
+                </div>
+                <div class="content">
+                    <p><strong>Name:</strong> Bilal Hassan</p>
+                    <p><strong>Email:</strong> siddiquibilal882@gmail.com</p>
+                    <p><strong>Phone:</strong> +923368525815</p>
+                    <p><strong>Religion:</strong> Islam</p>
+                    <p><strong>Marital Status:</strong> Single</p>
+                </div>
+            </div>
+
+            <!-- education Sections -->
+            <div class="section-box">
+                <div class="heading">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="content">
+                    <p><strong>Matriculation:</strong> SSC year(2023-2024)</p>
+                    <p><strong>Intermediate:</strong> HSC continue year(2024-2025)</p>
+                    <p><strong>Certified AI & Web Developer Program:</strong> Ongoing (2024-2025)</p>
+                </div>
+            </div>
+
+            <!-- Skills Sections & toggles -->
+            <div class="section-box">
+                <div class="heading">
+                    <h2>SKILLS</h2>
+                    <button id="btn-skills" class="toggle-button">Hide</button>
+                </div>
+                <div id="skills" class="content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience k Sections -->
+            <div class="section-box">
+                <div class="heading">
+                    <h2>WORK EXPERIENCE</h2>
+                </div>
+                <div class="content">
+                    <p><strong>Web Development:</strong> Created websites using Next.js</p>
+                    <p><strong>Media Editing:</strong> Edited Videos & Pictures for Clients</p>
+                </div>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
