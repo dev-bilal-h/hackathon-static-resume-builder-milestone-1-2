@@ -1,0 +1,212 @@
+/* General body styling for layout and appearance */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f0f0f0;
+    flex-direction: column;  
+}
+
+/* Styling for the form container */
+.form-container {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;  
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);  
+    border-radius: 10px;  
+    text-align: center;
+    margin: auto;
+    border: 2px solid #0ed6bc;  
+    position: relative;
+    z-index: 10;  
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+/* Header styling inside the form */
+.form-container h2 {
+    color: #0ed6bc;  
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Labels for input fields */
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 22px;  
+}
+
+/* Textarea input fields styling */
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #0ed6bc;  
+    margin-bottom: 15px;
+}
+
+/* File input field styling */
+input[type="file"] {
+    margin: 10px 0;
+    font-size: 16px;  
+    padding: 8px;
+}
+
+/* Placeholder text styling for textareas */
+textarea::placeholder {
+    font-size: 16px; 
+}
+
+/* Styling for the submit button */
+button {
+    background-color: #0ed6bc;  
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+    font-size: 16px;
+    width: 100%;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #60e9d7; 
+}
+
+/* Styling for the generated resume container */
+.container {
+    background-color: #b5d1e0;  
+    width: 70%;
+    max-width: 500px;  
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    margin: auto;
+    flex-direction: column;
+    display: none; 
+    padding-right: 55px;
+    margin-top: 30px;
+}
+
+/* Left section for profile picture and objective */
+.left-section {
+    padding: 20px;
+    background-color:  #10576d;  
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Right section for details */
+.right-section {
+    padding: 20px;
+    background-color: #e1e7e2;  
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+/* Styling for profile picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;  
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgb(63, 222, 228), 
+                0 0 20px rgba(63, 222, 228), 
+                0 0 25px rgba(63, 222, 228); 
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    color: #35ecec;  
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
+    font-family: cursive;
+}
+
+/* Styling for each section of the resume */
+.section-box {
+    background-color: #ffffff;  
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6); 
+    word-wrap: break-word;  
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* Header styling within each section */
+.section-box h2 {
+    color: #ec1111;  
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Heading container styling */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Inner header text styling */
+.heading h2 {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid  #f54f4f;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #f7eed8;  
+    font-size: 20px;
+}
+
+/* General paragraph and list item styling */
+p, li {
+    word-wrap: break-word;
+    line-height: 1.6;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;  
+    padding: 0;
+}
+
+/* Custom bullet styling for list items */
+li::before {
+    content: "• ";
+    color: #f13535;  
+}
+
+/* Responsive design for small screens */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
